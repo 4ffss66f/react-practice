@@ -1,0 +1,155 @@
+.booking-section {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.booking-eyebrow {
+  margin: 0 0 8px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+}
+
+.booking-description {
+  margin: 8px 0 0;
+  color: #4b5563;
+  max-width: 520px;
+}
+
+.booking-filter label,
+.booking-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.booking-filter select,
+.booking-form input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  background: #ffffff;
+  color: #111827;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.booking-form__column {
+  display: grid;
+  gap: 10px;
+}
+
+.booking-form__submit {
+  grid-column: span 4;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.booking-form__submit:hover {
+  background: #1d4ed8;
+}
+
+.booking-list {
+  display: grid;
+  gap: 16px;
+}
+
+.booking-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.booking-card__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.booking-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.booking-card__date {
+  margin: 0;
+  color: #4b5563;
+}
+
+.booking-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.booking-card__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 9999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.82rem;
+}
+
+.booking-empty {
+  padding: 24px;
+  text-align: center;
+  border-radius: 18px;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.booking-summary {
+  margin-top: 24px;
+  color: #374151;
+  font-weight: 600;
+}
+
+@media (max-width: 960px) {
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form__submit {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .booking-header {
+    align-items: flex-start;
+  }
+}
